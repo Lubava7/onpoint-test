@@ -1,11 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import "./BrendPage.css";
 import Header from "../../Components/Header/Header";
 
+import Modal from "../../Components/BrendModal/Modal";
+
 function BrendPage() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="brend-main">
       <Header />
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="key-msg">
         <p className="p1">Ключевое сообщение</p>
         <p className="p2">
@@ -26,7 +32,7 @@ function BrendPage() {
             A arcu <br />
             cursus vitae
           </p>
-          <div className="more-button"></div>
+          <div onClick={() => setIsOpen(!false)} className="more-button"></div>
         </div>
       </section>
       <div className="bottle"></div>
