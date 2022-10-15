@@ -1,42 +1,23 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useRef } from "react";
 import HomePage from "./pages/HomePage/HomePage";
 import TextPage from "./pages/TextPage/TextPage";
-// import Header from "./Components/Header/Header";
+import Header from "./Components/Header/Header";
 import BrendPage from "./pages/BrendPage/BrendPage";
 
 function App() {
-  const [distance, setDistance] = useState(1024);
+  const ref = useRef();
 
-  // function handleStart() {
-  //   console.log("start");
-  // }
-  // function handleMove(e) {
-  //   console.log("move");
-  //   e.target.style.scrollRight += 1024;
-  // }
-  // function handleEnd() {
-  //   console.log("end");
-  // }
-  // function handleCancel() {
-  //   console.log("cancel");
-  // }
   return (
     <div className="App">
-      <div
-        // onTouchStart={handleStart}
-        // onTouchMove={(e) => handleMove(e)}
-        // onTouchEnd={handleEnd}
-        // onTouchCancel={handleCancel}
-        className="carousel"
-      >
-        <div className="home">
+      <div className="carousel">
+        <div ref={ref} className="home c-item">
           <HomePage />
         </div>
-        <div className="text-page">
+        <div className="text-page c-item">
           <TextPage />
         </div>
-        <div className="brend">
+        <div className="brend c-item">
           <BrendPage />
         </div>
       </div>

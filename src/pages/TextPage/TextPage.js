@@ -1,5 +1,6 @@
 import React from "react";
 import "./TextPage.css";
+// import { useState, useRef, useEffect } from "react";
 
 import TextContent from "../../Components/TextContent/TextContent";
 import Header from "../../Components/Header/Header";

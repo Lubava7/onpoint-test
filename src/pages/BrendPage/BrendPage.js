@@ -32,7 +32,7 @@ function BrendPage() {
             A arcu <br />
             cursus vitae
           </p>
-          <div onClick={() => setIsOpen(!false)} className="more-button"></div>
+          <div onClick={() => setIsOpen(!isOpen)} className="more-button"></div>
         </div>
       </section>
       <div className="bottle"></div>

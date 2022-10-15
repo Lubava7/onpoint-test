@@ -7,17 +7,20 @@ import { Icon } from "@iconify/react";
 function Modal({ isOpen, setIsOpen }) {
   const [isColor, setIsColor] = useState(false);
 
-  //   function leftM() {
-  //     setIsColor(!false);
-  //   }
-  //   function rightM() {
-  //     setIsColor(!false);
-  //   }
-  if (!isOpen) return null;
-  if (isOpen) {
+  if (!isOpen) {
+    return null;
+  } else {
     return (
-      <div style={{ opacity: 1 }} className="back-layer">
-        <div style={{ opacity: 1 }} className="modal-wrapper">
+      <div>
+        <div
+          onClick={() => setIsOpen(false)}
+          // style={{ opacity: 1 }}
+          className={isOpen ? "back-layer-active" : "back-layer"}
+        ></div>
+        <div
+          // style={{ opacity: 1 }}
+          className={isOpen ? "modal-wrapper-active" : "modal-wrapper"}
+        >
           <section className="header-modal">
             <p className="p0">Преимущества</p>
             <p className="p">
@@ -60,21 +63,16 @@ function Modal({ isOpen, setIsOpen }) {
               </div>
             </div>
             <div className="btns">
-              <button onClick={() => setIsColor(!false)}>
+              <button onClick={() => setIsColor(!isColor)}>
                 <Icon icon="ep:arrow-right" rotate={2} />
               </button>
-              {isColor ? (
-                <div className="row-btns">
-                  <div className="circle circle-active-l"></div>
-                  <div className="circle circle-active-r"></div>
-                </div>
-              ) : (
-                <div className="row-btns">
-                  <div className="circle "></div>
-                  <div className="circle "></div>
-                </div>
-              )}
-              <button onClick={() => setIsColor(!false)}>
+
+              <div className="row-btns">
+                <div className={isColor ? " circle" : " circle-active-l"}></div>
+                <div className={isColor ? " circle-active-r" : " circle"}></div>
+              </div>
+
+              <button onClick={() => setIsColor(!isColor)}>
                 <Icon icon="ep:arrow-right" />
               </button>
             </div>
