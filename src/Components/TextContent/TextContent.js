@@ -1,5 +1,5 @@
-import React from "react";
-import "../../pages/TextPage/TextPage.css";
+import React from 'react';
+import '../../pages/TextPage/styled.js';
 
 function TextContent() {
   return (

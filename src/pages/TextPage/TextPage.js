@@ -1,23 +1,37 @@
-import React from "react";
-import "./TextPage.css";
+import React from 'react';
+import './styled.js';
 // import { useState, useRef, useEffect } from "react";
 
-import TextContent from "../../Components/TextContent/TextContent";
-import Header from "../../Components/Header/Header";
+import TextContent from '../../Components/TextContent/TextContent';
+import Header from '../../Components/Header/Header';
+
+import {
+  SecondPage,
+  TextContainer,
+  TextDiv,
+  Msg,
+  Onpoint,
+  Layer3_2,
+  Layer3_2_1,
+  Layer3_2_2,
+  Layer3_2_3,
+  Layer3_6,
+  Div,
+} from './styled';
 
 function TextPage() {
   return (
-    <div className="second-page">
+    <SecondPage>
       <Header />
-      <div className="msg">
+      <Msg>
         <p>
           Текст
           <br /> Сообщения
         </p>
-      </div>
-      <div className="text-container">
-        <div className="div">
-          <div className="text-div">
+      </Msg>
+      <TextContainer>
+        <Div>
+          <TextDiv>
             <p>
               <span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing
               elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -31,18 +45,18 @@ function TextPage() {
             <TextContent />
             <TextContent />
             <TextContent />
-          </div>
-        </div>
-      </div>
-      <div className="layer3_6 imgs"></div>
-      <div className="layer3_2 imgs"></div>
-      <div className="layer3_2_1 imgs"></div>
-      <div className="layer3_2_2 imgs"></div>
-      <div className="layer3_2_3 imgs"></div>
-      <div className="onpoint">
+          </TextDiv>
+        </Div>
+      </TextContainer>
+      <Layer3_6></Layer3_6>
+      <Layer3_2></Layer3_2>
+      <Layer3_2_1></Layer3_2_1>
+      <Layer3_2_2></Layer3_2_2>
+      <Layer3_2_3></Layer3_2_3>
+      <Onpoint>
         <p>onpoint</p>
-      </div>
-    </div>
+      </Onpoint>
+    </SecondPage>
   );
 }
 

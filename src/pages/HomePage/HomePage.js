@@ -1,29 +1,42 @@
-import React from "react";
-import "./HomePage.css";
+import React from 'react';
+import './styled.js';
 
-import HomeTitle from "../../Components/HomeTitle/HomeTitle";
-import Header from "../../Components/Header/Header";
+import HomeTitle from '../../Components/HomeTitle/HomeTitle';
+import Header from '../../Components/Header/Header';
+import {
+  MainContainer,
+  Bakti1,
+  Layer4,
+  Layer4_1,
+  Layer4_2,
+  Layer5,
+  Layer7,
+  Layer8,
+  PinkSperm,
+  PinkSperm1,
+  Onpoint,
+} from './styled';
 
 function HomePage() {
   return (
-    <div className="main-container">
+    <MainContainer>
       <Header />
       <div>
         <HomeTitle />
-        <div className="bakti_1 img"></div>
-        <div className="layer4_1 img"></div>
-        <div className="layer4_2 img"></div>
-        <div className="layer4 img"></div>
-        <div className="layer5 img"></div>
-        <div className="layer7 img"></div>
-        <div className="layer8 img"></div>
-        <div className="pink_sperm_1 img"></div>
-        <div className="pink_sperm img"></div>
+        <Bakti1></Bakti1>
+        <Layer4_1></Layer4_1>
+        <Layer4_2></Layer4_2>
+        <Layer4></Layer4>
+        <Layer5></Layer5>
+        <Layer7></Layer7>
+        <Layer8></Layer8>
+        <PinkSperm1></PinkSperm1>
+        <PinkSperm></PinkSperm>
       </div>
-      <div className="onpoint">
+      <Onpoint>
         <p>onpoint</p>
-      </div>
-    </div>
+      </Onpoint>
+    </MainContainer>
   );
 }
 

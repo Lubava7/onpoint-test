@@ -1,54 +1,70 @@
-import React from "react";
-import { useState } from "react";
-import "./BrendPage.css";
-import Header from "../../Components/Header/Header";
+import React from 'react';
+import { useState } from 'react';
+import './styled.js';
+import Header from '../../Components/Header/Header';
 
-import Modal from "../../Components/BrendModal/Modal";
+import Modal from '../../Components/BrendModal/Modal';
+import {
+  BrendMain,
+  Onpoint,
+  Bubble1,
+  Bottle,
+  Bubble2,
+  Bubble3,
+  Bubble4,
+  Bubble5,
+  Bubble6,
+  Bubble7,
+  Bubble8,
+  MoreButton,
+  RowBlock,
+  KeyMsg,
+} from './styled';
 
 function BrendPage() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="brend-main">
+    <BrendMain>
       <Header />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="key-msg">
-        <p className="p1">Ключевое сообщение</p>
-        <p className="p2">
+      <KeyMsg>
+        <p className='p1'>Ключевое сообщение</p>
+        <p className='p2'>
           Brend<span>XY</span>
         </p>
-      </div>
-      <section className="row-block">
-        <div className="div1">
-          <div className="icon2"></div>
+      </KeyMsg>
+      <RowBlock>
+        <div className='div1'>
+          <div className='icon2'></div>
           <p>
             Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus vesitibulum
             lorem sed risus ultricies
           </p>
         </div>
-        <div className="div2">
-          <div className="icon1"></div>
+        <div className='div2'>
+          <div className='icon1'></div>
           <p>
             A arcu <br />
             cursus vitae
           </p>
-          <div onClick={() => setIsOpen(!isOpen)} className="more-button"></div>
+          <MoreButton onClick={() => setIsOpen(!isOpen)}></MoreButton>
         </div>
-      </section>
-      <div className="bottle"></div>
+      </RowBlock>
+      <Bottle></Bottle>
 
-      <div className="bubble1 bubble"></div>
-      <div className="bubble2 bubble"></div>
-      <div className="bubble3 bubble"></div>
-      <div className="bubble4 bubble"></div>
-      <div className="bubble5 bubble"></div>
-      <div className="bubble6 bubble"></div>
-      <div className="bubble7 bubble"></div>
-      <div className="bubble8 bubble"></div>
-      <div className="onpoint">
+      <Bubble1></Bubble1>
+      <Bubble2></Bubble2>
+      <Bubble3></Bubble3>
+      <Bubble4></Bubble4>
+      <Bubble5></Bubble5>
+      <Bubble6></Bubble6>
+      <Bubble7></Bubble7>
+      <Bubble8></Bubble8>
+      <Onpoint>
         <p>onpoint</p>
-      </div>
-    </div>
+      </Onpoint>
+    </BrendMain>
   );
 }
 
