@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d03f79bf.css",
-    "main.js": "/static/js/main.a8e10813.js",
-    "static/js/453.9488732f.chunk.js": "/static/js/453.9488732f.chunk.js",
-    "static/media/bg.png": "/static/media/bg.5ef67a7fe43abed30138.png",
-    "static/media/bg1.png": "/static/media/bg1.ad395211692ee211568a.png",
-    "static/media/bottle.png": "/static/media/bottle.b6d20d14e2ab2ac474fb.png",
-    "static/media/Layer3_6.png": "/static/media/Layer3_6.3a533e7d2b17324932ec.png",
-    "static/media/layer4.png": "/static/media/layer4.ef63399d83c79db7c622.png",
-    "static/media/pink_sperm_1.png": "/static/media/pink_sperm_1.fe1331d209eb2aefbb07.png",
-    "static/media/Layer3_2.png": "/static/media/Layer3_2.94bb8f4562189e1e9888.png",
-    "static/media/pink_sperm.png": "/static/media/pink_sperm.71f8bcb02835d737af77.png",
-    "static/media/layer8.png": "/static/media/layer8.552f803cfa287f4843d6.png",
-    "index.html": "/index.html",
-    "main.d03f79bf.css.map": "/static/css/main.d03f79bf.css.map",
-    "main.a8e10813.js.map": "/static/js/main.a8e10813.js.map",
-    "453.9488732f.chunk.js.map": "/static/js/453.9488732f.chunk.js.map"
+    "main.css": "/onpoint-test/static/css/main.d03f79bf.css",
+    "main.js": "/onpoint-test/static/js/main.65736a18.js",
+    "static/js/453.9488732f.chunk.js": "/onpoint-test/static/js/453.9488732f.chunk.js",
+    "static/media/bg.png": "/onpoint-test/static/media/bg.5ef67a7fe43abed30138.png",
+    "static/media/bg1.png": "/onpoint-test/static/media/bg1.ad395211692ee211568a.png",
+    "static/media/bottle.png": "/onpoint-test/static/media/bottle.b6d20d14e2ab2ac474fb.png",
+    "static/media/Layer3_6.png": "/onpoint-test/static/media/Layer3_6.3a533e7d2b17324932ec.png",
+    "static/media/layer4.png": "/onpoint-test/static/media/layer4.ef63399d83c79db7c622.png",
+    "static/media/pink_sperm_1.png": "/onpoint-test/static/media/pink_sperm_1.fe1331d209eb2aefbb07.png",
+    "static/media/Layer3_2.png": "/onpoint-test/static/media/Layer3_2.94bb8f4562189e1e9888.png",
+    "static/media/pink_sperm.png": "/onpoint-test/static/media/pink_sperm.71f8bcb02835d737af77.png",
+    "static/media/layer8.png": "/onpoint-test/static/media/layer8.552f803cfa287f4843d6.png",
+    "index.html": "/onpoint-test/index.html",
+    "main.d03f79bf.css.map": "/onpoint-test/static/css/main.d03f79bf.css.map",
+    "main.65736a18.js.map": "/onpoint-test/static/js/main.65736a18.js.map",
+    "453.9488732f.chunk.js.map": "/onpoint-test/static/js/453.9488732f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d03f79bf.css",
-    "static/js/main.a8e10813.js"
+    "static/js/main.65736a18.js"
   ]
 }
