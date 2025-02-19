@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
 .title {
   display: flex;
   width: 90%;
@@ -8,7 +8,7 @@
   flex-direction: column;
   margin: 100px 0 0 50px;
   text-transform: uppercase;
-  font-family: "Gilroy-Light", sans-serif;
+  font-family: 'Gilroy-Light', sans-serif;
   position: absolute;
   z-index: 1;
 }
@@ -22,7 +22,7 @@ p {
   width: 100%;
 }
 span {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 .pink-button {
   border: 1px solid #ff6a9f;
@@ -34,7 +34,7 @@ span {
   height: 75px;
   width: 270px;
   position: absolute;
-  margin: -110px 0 0 500px;
+  margin: -110px 0 0 610px;
   display: flex;
   flex-direction: row;
   justify-content: center;
